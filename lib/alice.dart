@@ -8,6 +8,7 @@ import 'package:alice/core/alice_http_client_adapter.dart';
 import 'package:alice/model/alice_http_call.dart';
 import 'package:alice/model/alice_log.dart';
 import 'package:chopper/chopper.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:http/http.dart' as http;
@@ -108,9 +109,9 @@ class Alice {
   }
 
   /// Get chopper interceptor. This should be added to Chopper instance.
-  ResponseInterceptor getChopperInterceptor() {
-    return AliceChopperInterceptor(_aliceCore);
-  }
+  // ResponseInterceptorHandler getChopperInterceptor() {
+  //   return AliceChopperInterceptor(_aliceCore);
+  // }
 
   /// Handle generic http call. Can be used to any http client.
   void addHttpCall(AliceHttpCall aliceHttpCall) {
