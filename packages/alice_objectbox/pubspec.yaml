@@ -17,7 +17,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  alice: ^1.0.0-dev.9
+  alice:
+    path: ../alice
   json_annotation: ^4.9.0
   meta: ^1.9.1
   objectbox: ^4.0.1

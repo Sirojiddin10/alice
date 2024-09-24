@@ -14,7 +14,8 @@ environment:
   flutter: ">=3.3.0"
 
 dependencies:
-  alice: ^1.0.0-dev.9
+  alice:
+    path: ../alice
   http: ^1.2.1
 
 dev_dependencies:
